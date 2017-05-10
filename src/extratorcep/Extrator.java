@@ -37,13 +37,7 @@ public class Extrator {
                     
                     rua.setCep(elemento.children().get(4).text().replace("-", ""));
                     
-                    System.out.println("---------------------");
-                    System.out.println(rua.getTipo());
-                    System.out.println(rua.getNome());
-                    System.out.println(rua.getBairro());
-                    System.out.println(rua.getCidade());
-                    System.out.println(rua.getEstado());
-                    System.out.println(rua.getCep());
+                    RuaDAO.save(rua);
                 }
             });
         }  
